@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dream House Hannah | Tetování a piercing Klatovy</title>
+<meta name="description" content="Dream House Hannah v Klatovech – tetování, piercing, dentální krystaly, nástřel náušnic a kosmetika.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   ZÁKLAD
+========================================================= */
+
+:root{
+    --green:#003b39;
+    --green-dark:#002c2b;
+    --green-deep:#001f1e;
+    --gold:#b27a38;
+    --gold-light:#d6ad69;
+    --white:#f7f5ef;
+    --muted:#c7cbc8;
+    --line:rgba(214,173,105,.35);
+    --container:1380px;
+    --header-h:92px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:var(--header-h);
+}
+
+body{
+    font-family:"Montserrat",sans-serif;
+    background:var(--green-dark);
+    color:var(--white);
+    overflow-x:hidden;
+}
+
+body.menu-open{
+    overflow:hidden;
+}
+
+img,
+video{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button{
+    font:inherit;
+}
+
+.container{
+    width:min(var(--container),92%);
+    margin:auto;
+}
+
+.section{
+    padding:115px 0;
+}
+
+.eyebrow{
+    color:var(--gold-light);
+    text-transform:uppercase;
+    letter-spacing:.34em;
+    font-size:.76rem;
+    font-weight:500;
+    margin-bottom:16px;
+}
+
+.section-title{
+    font-family:"Cormorant Garamond",serif;
+    font-weight:500;
+    font-size:clamp(2.8rem,5vw,5rem);
+    line-height:.95;
+    letter-spacing:.02em;
+}
+
+.gold-line{
+    width:70px;
+    height:1px;
+    background:var(--gold);
+    margin-top:25px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:var(--header-h);
+    z-index:1000;
+    background:rgba(0,31,30,.88);
+    /* backdrop-filter:blur(12px); */
+    border-bottom:1px solid rgba(214,173,105,.16);
+}
+
+.header-inner{
+    width:min(1500px,94%);
+    height:100%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.header-logo img{
+    width:260px;
+    max-height:68px;
+    object-fit:contain;
+    object-position:left center;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:35px;
+}
+
+nav a{
+    position:relative;
+    text-transform:uppercase;
+    letter-spacing:.17em;
+    font-size:.72rem;
+    font-weight:500;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-9px;
+    width:0;
+    height:1px;
+    background:var(--gold-light);
+    transition:.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+.menu-btn{
+    display:none;
+    width:42px;
+    height:42px;
+    background:none;
+    border:0;
+    cursor:pointer;
+    position:relative;
+    z-index:1002;
+}
+
+.menu-btn span{
+    position:absolute;
+    left:7px;
+    width:28px;
+    height:1px;
+    background:var(--white);
+    transition:.3s;
+}
+
+.menu-btn span:nth-child(1){
+    top:13px;
+}
+
+.menu-btn span:nth-child(2){
+    top:21px;
+}
+
+.menu-btn span:nth-child(3){
+    top:29px;
+}
+
+.menu-btn.active span:nth-child(1){
+    top:21px;
+    transform:rotate(45deg);
+}
+
+.menu-btn.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-btn.active span:nth-child(3){
+    top:21px;
+    transform:rotate(-45deg);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    position:relative;
+    height:100svh;
+    min-height:700px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:0;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,24,23,.82) 0%,
+            rgba(0,35,33,.55) 48%,
+            rgba(0,20,19,.7) 100%
+        );
+    z-index:1;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:190px;
+    background:linear-gradient(transparent,var(--green-dark));
+    z-index:1;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    width:min(900px,90%);
+    padding-top:var(--header-h);
+    transform:translateY(-45px);
+}
+
+.hero-logo{
+    width:min(650px,80%);
+    margin:0 auto 35px;
+    filter:drop-shadow(0 5px 18px rgba(0,0,0,.4));
+}
+
+.hero-claim{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    font-family:"Cormorant Garamond",serif;
+    font-size:clamp(1.4rem,2.3vw,2rem);
+    line-height:1.3;
+    text-shadow:0 3px 15px rgba(0,0,0,.6);
+}
+
+.hero-claim span:last-child{
+    color:var(--gold-light);
+}
+
+.hero-actions{
+    margin-top:38px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    min-height:52px;
+    padding:0 28px;
+    border:1px solid var(--gold);
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    font-size:.7rem;
+    font-weight:500;
+    transition:.3s;
+}
+
+.btn-gold{
+    background:var(--gold);
+    color:#fff;
+}
+
+.btn-gold:hover{
+    background:var(--gold-light);
+    border-color:var(--gold-light);
+    color:var(--green-deep);
+}
+
+.btn-outline:hover{
+    background:var(--white);
+    color:var(--green-deep);
+    border-color:var(--white);
+}
+
+.scroll-down{
+    position:absolute;
+    z-index:3;
+    bottom:30px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    font-size:.62rem;
+    text-transform:uppercase;
+    letter-spacing:.25em;
+    color:rgba(255,255,255,.7);
+}
+
+.scroll-down::after{
+    content:"";
+    width:1px;
+    height:38px;
+    background:var(--gold);
+}
+
+
+/* =========================================================
+   ÚVOD
+========================================================= */
+
+.intro{
+    position:relative;
+    background:var(--green-dark);
+    overflow:hidden;
+}
+
+.intro-watermark{
+    position:absolute;
+    right:-80px;
+    top:50%;
+    transform:translateY(-50%);
+    width:540px;
+    opacity:.035;
+    pointer-events:none;
+    filter:grayscale(1);
+}
+
+.intro-inner{
+    position:relative;
+    z-index:2;
+    width:min(1000px,90%);
+    margin:auto;
+    text-align:center;
+}
+
+.intro-lead{
+    font-family:"Cormorant Garamond",serif;
+    color:var(--gold-light);
+    font-size:clamp(1.8rem,3.5vw,3rem);
+    line-height:1.25;
+    margin:30px auto 35px;
+}
+
+.intro-text{
+    width:min(850px,100%);
+    margin:auto;
+    color:#e1e1dc;
+    line-height:1.95;
+    font-size:.98rem;
+}
+
+.intro-text p + p{
+    margin-top:18px;
+}
+
+
+/* =========================================================
+   SLUŽBY
+========================================================= */
+
+.services{
+    background:var(--green-deep);
+    position:relative;
+}
+
+.services-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    margin-bottom:70px;
+}
+
+.services-list{
+    border-top:1px solid var(--line);
+}
+
+.service-item{
+    position:relative;
+    display:grid;
+    grid-template-columns:100px 1fr auto;
+    align-items:center;
+    gap:25px;
+    min-height:115px;
+    border-bottom:1px solid var(--line);
+    overflow:hidden;
+}
+
+.service-number{
+    color:var(--gold);
+    font-family:"Cormorant Garamond",serif;
+    font-size:1.2rem;
+}
+
+.service-name{
+    font-family:"Cormorant Garamond",serif;
+    font-size:clamp(2rem,4vw,3.8rem);
+    font-weight:400;
+}
+
+.service-symbol{
+    color:var(--gold);
+    font-size:1.7rem;
+    transition:.3s;
+}
+
+.service-item::before{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:100%;
+    background:rgba(178,122,56,.06);
+    transition:.5s;
+}
+
+.service-item:hover::before{
+    width:100%;
+}
+
+.service-item:hover .service-symbol{
+    transform:translateX(8px);
+}
+
+
+/* =========================================================
+   GALERIE
+========================================================= */
+
+.gallery-section{
+    background:var(--green-dark);
+}
+
+.gallery-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:40px;
+    margin-bottom:55px;
+}
+
+.gallery-head p{
+    width:380px;
+    color:var(--muted);
+    line-height:1.7;
+    font-size:.9rem;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    grid-auto-rows:90px;
+    gap:12px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    position:relative;
+    background:#111;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .6s ease;
+}
+
+.gallery-item::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border:1px solid rgba(214,173,105,0);
+    transition:.3s;
+    pointer-events:none;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.035);
+}
+
+.gallery-item:hover::after{
+    inset:9px;
+    border-color:rgba(214,173,105,.65);
+}
+
+.tattoo-grid .gallery-item:nth-child(1){
+    grid-column:span 5;
+    grid-row:span 6;
+}
+
+.tattoo-grid .gallery-item:nth-child(2){
+    grid-column:span 3;
+    grid-row:span 5;
+}
+
+.tattoo-grid .gallery-item:nth-child(3){
+    grid-column:span 4;
+    grid-row:span 6;
+}
+
+.tattoo-grid .gallery-item:nth-child(4){
+    grid-column:span 4;
+    grid-row:span 5;
+}
+
+.tattoo-grid .gallery-item:nth-child(5){
+    grid-column:span 3;
+    grid-row:span 5;
+}
+
+.piercing-section{
+    background:var(--green-deep);
+}
+
+.piercing-grid .gallery-item:nth-child(1){
+    grid-column:span 4;
+    grid-row:span 6;
+}
+
+.piercing-grid .gallery-item:nth-child(2){
+    grid-column:span 4;
+    grid-row:span 5;
+}
+
+.piercing-grid .gallery-item:nth-child(3){
+    grid-column:span 4;
+    grid-row:span 6;
+}
+
+.piercing-grid .gallery-item:nth-child(4){
+    grid-column:span 6;
+    grid-row:span 5;
+}
+
+.piercing-grid .gallery-item:nth-child(5){
+    grid-column:span 6;
+    grid-row:span 5;
+}
+
+
+/* =========================================================
+   HANNAH
+========================================================= */
+
+.about{
+    background:var(--green-dark);
+    position:relative;
+    overflow:hidden;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:minmax(350px,.85fr) 1.15fr;
+    align-items:center;
+    gap:90px;
+}
+
+.about-image{
+    position:relative;
+    padding:20px;
+}
+
+.about-image::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:45%;
+    height:45%;
+    border-left:1px solid var(--gold);
+    border-top:1px solid var(--gold);
+}
+
+.about-image::after{
+    content:"";
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:45%;
+    height:45%;
+    border-right:1px solid var(--gold);
+    border-bottom:1px solid var(--gold);
+}
+
+.about-image img{
+    width:100%;
+    max-height:750px;
+    object-fit:contain;
+    position:relative;
+    z-index:2;
+}
+
+.about-content{
+    max-width:650px;
+}
+
+.about-big{
+    margin-top:30px;
+    font-family:"Cormorant Garamond",serif;
+    font-size:clamp(1.7rem,3vw,2.5rem);
+    line-height:1.35;
+    color:var(--gold-light);
+}
+
+.about-note{
+    margin-top:28px;
+    color:var(--muted);
+    line-height:1.9;
+}
+
+
+/* =========================================================
+   CENÍK
+========================================================= */
+
+.prices{
+    background:var(--green-deep);
+}
+
+.prices-head{
+    text-align:center;
+    margin-bottom:65px;
+}
+
+.prices-head .gold-line{
+    margin:25px auto 0;
+}
+
+.price-columns{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+    align-items:start;
+}
+
+.price-box{
+    border:1px solid var(--line);
+    padding:50px;
+    position:relative;
+}
+
+.price-box::before{
+    content:"";
+    position:absolute;
+    top:-1px;
+    left:50px;
+    width:100px;
+    height:2px;
+    background:var(--gold);
+}
+
+.price-title{
+    font-family:"Cormorant Garamond",serif;
+    font-size:2.8rem;
+    font-weight:500;
+    margin-bottom:35px;
+}
+
+.price-row{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    padding:17px 0;
+    border-bottom:1px solid rgba(214,173,105,.16);
+    line-height:1.45;
+}
+
+.price-row span:first-child{
+    color:#e8e8e4;
+}
+
+.price-row strong{
+    white-space:nowrap;
+    color:var(--gold-light);
+    font-weight:500;
+}
+
+.price-note{
+    margin-top:28px;
+    color:var(--muted);
+    line-height:1.8;
+    font-size:.83rem;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+}
+
+
+/* =========================================================
+   KONTAKT
+========================================================= */
+
+.contact{
+    background:var(--green-dark);
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:100px;
+}
+
+.contact-title{
+    margin-bottom:45px;
+}
+
+.contact-list{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact-row{
+    padding:20px 0;
+    border-bottom:1px solid var(--line);
+}
+
+.contact-label{
+    display:block;
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    font-size:.65rem;
+    margin-bottom:8px;
+}
+
+.contact-value{
+    font-family:"Cormorant Garamond",serif;
+    font-size:1.55rem;
+}
+
+.contact-value a:hover{
+    color:var(--gold-light);
+}
+
+.hours{
+    border-left:1px solid var(--gold);
+    padding-left:50px;
+}
+
+.hours-title{
+    font-family:"Cormorant Garamond",serif;
+    font-size:2.4rem;
+    margin-bottom:30px;
+}
+
+.hours-row{
+    display:flex;
+    justify-content:space-between;
+    padding:13px 0;
+    border-bottom:1px solid rgba(214,173,105,.15);
+}
+
+.hours-row span:last-child{
+    color:var(--gold-light);
+}
+
+.socials{
+    display:flex;
+    gap:12px;
+    margin-top:35px;
+}
+
+.social-link{
+    border:1px solid var(--line);
+    padding:14px 19px;
+    text-transform:uppercase;
+    letter-spacing:.15em;
+    font-size:.68rem;
+    transition:.3s;
+}
+
+.social-link:hover{
+    background:var(--gold);
+    border-color:var(--gold);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    background:#001817;
+    border-top:1px solid rgba(214,173,105,.2);
+    padding:55px 0 25px;
+}
+
+.footer-main{
+    text-align:center;
+}
+
+.footer-lion{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+    margin:0 auto 22px;
+    opacity:.85;
+}
+
+.footer-name{
+    font-family:"Cormorant Garamond",serif;
+    font-size:2rem;
+    color:var(--gold-light);
+}
+
+.footer-small{
+    margin-top:12px;
+    color:#8d9995;
+    font-size:.72rem;
+    letter-spacing:.12em;
+}
+
+.footer-bottom{
+    margin-top:45px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.06);
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    color:#71807b;
+    font-size:.7rem;
+}
+
+.footer-bottom a:hover{
+    color:var(--gold-light);
+}
+
+
+/* =========================================================
+   REVEAL
+========================================================= */
+
+.reveal{
+    opacity:0;
+    transform:translateY(25px);
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}
+
+.reveal.visible{
+    opacity:1;
+    transform:none;
+}
+
+
+/* =========================================================
+   TABLET + MOBIL
+========================================================= */
+
+@media(max-width:900px){
+
+    :root{
+        --header-h:76px;
+    }
+
+    .section{
+        padding:80px 0;
+    }
+
+    .header-inner{
+        width:92%;
+    }
+
+    .header-logo img{
+        width:190px;
+        max-height:56px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    nav{
+        position:fixed;
+        inset:0;
+        background:rgba(0,31,30,.98);
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:27px;
+        opacity:0;
+        visibility:hidden;
+        pointer-events:none;
+        transition:.3s;
+    }
+
+    nav.open{
+        opacity:1;
+        visibility:visible;
+        pointer-events:auto;
+    }
+
+    nav a{
+        font-family:"Cormorant Garamond",serif;
+        font-size:2rem;
+        text-transform:none;
+        letter-spacing:.05em;
+    }
+
+    nav a::after{
+        display:none;
+    }
+
+    .hero{
+        min-height:650px;
+    }
+
+    .hero-video{
+        object-position:center center;
+    }
+
+    .hero::before{
+        background:rgba(0,27,26,.62);
+    }
+
+    .hero-logo{
+        width:min(540px,88%);
+    }
+
+    .services-head{
+        display:block;
+    }
+
+    .services-head .gold-line{
+        margin-bottom:0;
+    }
+
+    .service-item{
+        grid-template-columns:55px 1fr auto;
+        min-height:95px;
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+        grid-auto-rows:300px;
+        gap:8px;
+    }
+
+    .tattoo-grid .gallery-item,
+    .piercing-grid .gallery-item{
+        grid-column:auto !important;
+        grid-row:auto !important;
+    }
+
+    .tattoo-grid .gallery-item:first-child,
+    .piercing-grid .gallery-item:first-child{
+        grid-column:span 2 !important;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+        gap:55px;
+    }
+
+    .about-image{
+        width:min(550px,100%);
+        margin:auto;
+    }
+
+    .about-content{
+        max-width:none;
+    }
+
+    .price-columns{
+        grid-template-columns:1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+        gap:65px;
+    }
+
+    .hours{
+        padding-left:0;
+        border-left:0;
+        border-top:1px solid var(--gold);
+        padding-top:45px;
+    }
+
+}
+
+
+/* =========================================================
+   MALÝ MOBIL
+========================================================= */
+
+@media(max-width:600px){
+
+    .container{
+        width:90%;
+    }
+
+    .section{
+        padding:68px 0;
+    }
+
+    .section-title{
+        font-size:2.65rem;
+    }
+
+    .eyebrow{
+        font-size:.65rem;
+        letter-spacing:.27em;
+    }
+
+    header{
+        background:rgba(0,31,30,.94);
+    }
+
+    .header-logo img{
+        width:165px;
+    }
+
+    .hero{
+        height:100svh;
+        min-height:600px;
+    }
+
+    /*
+      Video je horizontální.
+      Cover na mobilu ořízne boky, ale zachová plnou hero plochu.
+      Pozici můžeme později upravit podle konkrétních záběrů.
+    */
+    .hero-video{
+        object-fit:cover;
+        object-position:center center;
+    }
+
+    .hero::before{
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(0,25,24,.45),
+                rgba(0,25,24,.62)
+            );
+    }
+
+    .hero::after{
+        height:120px;
+    }
+
+    .hero-content{
+        width:90%;
+    }
+
+    .hero-logo{
+        width:95%;
+        margin-bottom:27px;
+    }
+
+    .hero-claim{
+        font-size:1.35rem;
+        gap:10px;
+    }
+
+    .hero-actions{
+        flex-direction:column;
+        width:min(300px,100%);
+        margin:32px auto 0;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .scroll-down{
+        display:none;
+    }
+
+    .intro-watermark{
+        width:330px;
+        right:-150px;
+    }
+
+    .intro-lead{
+        font-size:1.8rem;
+    }
+
+    .intro-text{
+        font-size:.9rem;
+        line-height:1.85;
+    }
+
+    .services-head{
+        margin-bottom:40px;
+    }
+
+    .service-item{
+        grid-template-columns:38px 1fr auto;
+        gap:10px;
+        min-height:82px;
+    }
+
+    .service-number{
+        font-size:.85rem;
+    }
+
+    .service-name{
+        font-size:1.75rem;
+    }
+
+    .service-symbol{
+        font-size:1.2rem;
+    }
+
+    .gallery-head{
+        display:block;
+        margin-bottom:35px;
+    }
+
+    .gallery-head p{
+        width:100%;
+        margin-top:20px;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr 1fr;
+        grid-auto-rows:235px;
+        gap:6px;
+    }
+
+    .gallery-grid .gallery-item:first-child{
+        grid-column:span 2 !important;
+        height:330px;
+    }
+
+    .gallery-item::after{
+        display:none;
+    }
+
+    .about-grid{
+        gap:40px;
+    }
+
+    .about-image{
+        padding:12px;
+    }
+
+    .about-big{
+        font-size:1.65rem;
+    }
+
+    .price-box{
+        padding:35px 22px;
+    }
+
+    .price-box::before{
+        left:22px;
+    }
+
+    .price-title{
+        font-size:2.25rem;
+    }
+
+    .price-row{
+        gap:15px;
+        font-size:.86rem;
+        align-items:flex-end;
+    }
+
+    .price-row strong{
+        text-align:right;
+    }
+
+    .contact-value{
+        font-size:1.3rem;
+        overflow-wrap:anywhere;
+    }
+
+    .hours-title{
+        font-size:2rem;
+    }
+
+    .socials{
+        flex-direction:column;
+    }
+
+    .social-link{
+        text-align:center;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     HEADER
+======================================================== -->
+
+<header>
+
+    <div class="header-inner">
+
+        <a href="#domu" class="header-logo">
+            <img src="logo1.png" alt="Dream House Hannah">
+        </a>
+
+        <nav id="nav">
+            <a href="#domu">Domů</a>
+            <a href="#sluzby">Služby</a>
+            <a href="#tetovani">Tetování</a>
+            <a href="#piercing">Piercing</a>
+            <a href="#cenik">Ceník</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Otevřít menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =======================================================
+     HERO
+======================================================== -->
+
+<section class="hero" id="domu">
+
+    <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+    >
+        <source src="hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+
+        <img
+            src="logo.png"
+            alt="Dream House Hannah Tattoo"
+            class="hero-logo"
+        >
+
+        <div class="hero-claim">
+            <span>🖤 Tetování a piercing bez stresu a bolesti</span>
+            <span>✨ Pomůžu ti cítit se lépe ve svém těle</span>
+        </div>
+
+        <div class="hero-actions">
+
+            <a href="#kontakt" class="btn btn-gold">
+                Kontakt
+            </a>
+
+            <a href="#tetovani" class="btn btn-outline">
+                Moje práce
+            </a>
+
+        </div>
+
+    </div>
+
+    <a href="#uvod" class="scroll-down">
+        Objevte studio
+    </a>
+
+</section>
+
+
+<!-- =======================================================
+     ÚVOD
+======================================================== -->
+
+<section class="section intro" id="uvod">
+
+    <img
+        src="lion.jpeg"
+        alt=""
+        class="intro-watermark"
+    >
+
+    <div class="intro-inner reveal">
+
+        <div class="eyebrow">
+            Dream House Hannah · Klatovy
+        </div>
+
+        <h2 class="section-title">
+            Každé tetování<br>
+            vypráví příběh
+        </h2>
+
+        <div class="intro-lead">
+            ✨ Každé tetování vypráví příběh. Každá linka nese vzpomínku, odvahu nebo nový začátek.
+        </div>
+
+        <div class="intro-text">
+
+            <p>
+                Vítejte v Dream House Hannah v Klatovech – místě, kde se vaše myšlenky, emoce a sny proměňují v jedinečné umění na celý život. Ke každému klientovi přistupujeme s respektem, pečlivostí a srdcem, protože víme, že tetování není jen obrázek, ale součást vaší cesty.
+            </p>
+
+            <p>
+                Přijďte si vytvořit něco, co bude mít skutečný význam. Těšíme se, až společně napíšeme další příběh – ten váš. 🖤
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     SLUŽBY
+======================================================== -->
+
+<section class="section services" id="sluzby">
+
+    <div class="container">
+
+        <div class="services-head reveal">
+
+            <div>
+                <div class="eyebrow">Dream House Hannah</div>
+                <h2 class="section-title">Služby</h2>
+            </div>
+
+            <div class="gold-line"></div>
+
+        </div>
+
+        <div class="services-list reveal">
+
+            <div class="service-item">
+                <div class="service-number">01</div>
+                <div class="service-name">Tetování</div>
+                <div class="service-symbol">→</div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-number">02</div>
+                <div class="service-name">Piercing</div>
+                <div class="service-symbol">→</div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-number">03</div>
+                <div class="service-name">Dentální krystaly</div>
+                <div class="service-symbol">→</div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-number">04</div>
+                <div class="service-name">Nástřel náušnic</div>
+                <div class="service-symbol">→</div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-number">05</div>
+                <div class="service-name">Kosmetika</div>
+                <div class="service-symbol">→</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     TETOVÁNÍ
+======================================================== -->
+
+<section class="section gallery-section" id="tetovani">
+
+    <div class="container">
+
+        <div class="gallery-head reveal">
+
+            <div>
+                <div class="eyebrow">Portfolio</div>
+                <h2 class="section-title">Tetování</h2>
+                <div class="gold-line"></div>
+            </div>
+
+        </div>
+
+        <div class="gallery-grid tattoo-grid reveal">
+
+            <div class="gallery-item">
+                <img src="tattoo1.webp" alt="Tetování Dream House Hannah" loading="lazy" decoding="async">
+            </div>
+
+            <div class="gallery-item">
+                <img src="tattoo2.webp" alt="Tetování Dream House Hannah" loading="lazy" decoding="async">
+            </div>
+
+            <div class="gallery-item">
+                <img src="tattoo3.webp" alt="Tetování Dream House Hannah" loading="lazy" decoding="async">
+            </div>
+
+            <div class="gallery-item">
+                <img src="tattoo4.webp" alt="Tetování Dream House Hannah" loading="lazy" decoding="async">
+            </div>
+
+            <div class="gallery-item">
+                <img src="tattoo5.webp" alt="Tetování Dream House Hannah" loading="lazy" decoding="async">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     PIERCING
+======================================================== -->
+
+<section class="section piercing-section" id="piercing">
+
+    <div class="container">
+
+        <div class="gallery-head reveal">
+
+            <div>
+                <div class="eyebrow">Portfolio</div>
+                <h2 class="section-title">Piercing</h2>
+                <div class="gold-line"></div>
+            </div>
+
+        </div>
+
+        <div class="gallery-grid piercing-grid reveal">
+
+            <div class="gallery-item">
+                <img src="piercing1.webp" alt="Piercing Dream House Hannah" loading="lazy" decoding="async">
+            </div>
+
+            <div class="gallery-item">
+                <img src="piercing2.webp" alt="Piercing Dream House Hannah" loading="lazy" decoding="async">
+            </div>
+
+            <div class="gallery-item">
+                <img src="piercing3.webp" alt="Piercing Dream House Hannah" loading="lazy" decoding="async">
+            </div>
+
+            <div class="gallery-item">
+                <img src="piercing4.webp" alt="Piercing Dream House Hannah" loading="lazy" decoding="async">
+            </div>
+
+            <div class="gallery-item">
+                <img src="piercing5.webp" alt="Piercing Dream House Hannah" loading="lazy" decoding="async">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     HANNAH
+======================================================== -->
+
+<section class="section about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-image reveal">
+
+                <img
+    src="hannah.png"
+    alt="Dream House Hannah"
+    loading="lazy"
+    decoding="async"
+>
+
+            </div>
+
+            <div class="about-content reveal">
+
+                <div class="eyebrow">
+                    Dream House Hannah
+                </div>
+
+                <h2 class="section-title">
+                    Místo pro váš<br>
+                    vlastní příběh
+                </h2>
+
+                <div class="gold-line"></div>
+
+                <div class="about-big">
+                    🖤 Tetování a piercing bez stresu a bolesti
+                </div>
+
+                <div class="about-big">
+                    ✨ Pomůžu ti cítit se lépe ve svém těle
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     CENÍK
+======================================================== -->
+
+<section class="section prices" id="cenik">
+
+    <div class="container">
+
+        <div class="prices-head reveal">
+
+            <div class="eyebrow">
+                Orientační ceny
+            </div>
+
+            <h2 class="section-title">
+                Ceník
+            </h2>
+
+            <div class="gold-line"></div>
+
+        </div>
+
+
+        <div class="price-columns">
+
+
+            <!-- TETOVÁNÍ -->
+
+            <div class="price-box reveal">
+
+                <h3 class="price-title">
+                    Tetování
+                </h3>
+
+                <div class="price-row">
+                    <span>Konzultace</span>
+                    <strong>zdarma</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Vypracování návrhu bez tetování</span>
+                    <strong>1 000 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Tetování černo-bílé</span>
+                    <strong>od 1 200 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Refresh starého tetování</span>
+                    <strong>od 1 500 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Tetování barevné</span>
+                    <strong>od 1 700 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Cover up (předělávka)</span>
+                    <strong>od 2 000 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Korekce</span>
+                    <strong>zdarma / min částka</strong>
+                </div>
+
+                <p class="price-note">
+                    Částka se odvíjí dle umístění, velikosti a náročnosti motivu.
+                </p>
+
+            </div>
+
+
+            <!-- PIERCING -->
+
+            <div class="price-box reveal">
+
+                <h3 class="price-title">
+                    Aplikace piercingu
+                </h3>
+
+                <div class="price-row">
+                    <span>Lobe</span>
+                    <strong>700 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Helix</span>
+                    <strong>700 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Industrial</span>
+                    <strong>900 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Rook</span>
+                    <strong>700 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>SNUG</span>
+                    <strong>700 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Conch</span>
+                    <strong>700 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Tragus</span>
+                    <strong>700 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Ostatní</span>
+                    <strong>800 Kč</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     KONTAKT
+======================================================== -->
+
+<section class="section contact" id="kontakt">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+
+            <div class="reveal">
+
+                <div class="contact-title">
+
+                    <div class="eyebrow">
+                        Dream House Hannah
+                    </div>
+
+                    <h2 class="section-title">
+                        Kontakt
+                    </h2>
+
+                    <div class="gold-line"></div>
+
+                </div>
+
+
+                <div class="contact-list">
+
+                    <div class="contact-row">
+
+                        <span class="contact-label">
+                            Adresa
+                        </span>
+
+                        <div class="contact-value">
+                            <a
+                                href="https://maps.app.goo.gl/q4Qd7z4SruzqPNyRA"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Pražská 161<br>
+                                339 01 Klatovy I
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-row">
+
+                        <span class="contact-label">
+                            Telefon
+                        </span>
+
+                        <div class="contact-value">
+                            <a href="tel:+420608356226">
+                                +420 608 356 226
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-row">
+
+                        <span class="contact-label">
+                            E-mail
+                        </span>
+
+                        <div class="contact-value">
+                            <a href="mailto:tele.17@seznam.cz">
+                                tele.17@seznam.cz
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="socials">
+
+                    <a
+                        href="https://www.instagram.com/dreamhousehannah/"
+                        target="_blank"
+                        rel="noopener"
+                        class="social-link"
+                    >
+                        Instagram
+                    </a>
+
+                    <a
+                        href="https://www.facebook.com/DREAMHOUSEHannah"
+                        target="_blank"
+                        rel="noopener"
+                        class="social-link"
+                    >
+                        Facebook
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hours reveal">
+
+                <h3 class="hours-title">
+                    Otevírací doba
+                </h3>
+
+                <div class="hours-row">
+                    <span>Pondělí</span>
+                    <span>Zavřeno</span>
+                </div>
+
+                <div class="hours-row">
+                    <span>Úterý</span>
+                    <span>9:00–16:00</span>
+                </div>
+
+                <div class="hours-row">
+                    <span>Středa</span>
+                    <span>9:00–16:00</span>
+                </div>
+
+                <div class="hours-row">
+                    <span>Čtvrtek</span>
+                    <span>9:00–16:00</span>
+                </div>
+
+                <div class="hours-row">
+                    <span>Pátek</span>
+                    <span>9:00–16:00</span>
+                </div>
+
+                <div class="hours-row">
+                    <span>Sobota</span>
+                    <span>9:00–12:00</span>
+                </div>
+
+                <div class="hours-row">
+                    <span>Neděle</span>
+                    <span>Zavřeno</span>
+                </div>
+
+                <div style="margin-top:35px;">
+
+                    <a
+                        href="https://maps.app.goo.gl/q4Qd7z4SruzqPNyRA"
+                        target="_blank"
+                        rel="noopener"
+                        class="btn btn-outline"
+                    >
+                        Zobrazit na mapě
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =======================================================
+     FOOTER
+======================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <img
+                src="lion.jpeg"
+                alt=""
+                class="footer-lion"
+            >
+
+            <div class="footer-name">
+                Dream House Hannah
+            </div>
+
+            <div class="footer-small">
+                TATTOO · KLATOVY
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span id="year"></span> Dream House Hannah
+            </span>
+
+            <a
+                href="https://zajait.cz/"
+                target="_blank"
+                rel="noopener"
+            >
+                Designed by ZajaIT
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+/* =========================================================
+   MENU
+========================================================= */
+
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.getElementById("nav");
+
+function closeMenu(){
+    menuBtn.classList.remove("active");
+    nav.classList.remove("open");
+    document.body.classList.remove("menu-open");
+}
+
+menuBtn.addEventListener("click", () => {
+
+    menuBtn.classList.toggle("active");
+    nav.classList.toggle("open");
+    document.body.classList.toggle("menu-open");
+
+});
+
+nav.querySelectorAll("a").forEach(link => {
+
+    link.addEventListener("click", closeMenu);
+
+});
+
+
+/* kliknutí mimo položky menu */
+
+nav.addEventListener("click", e => {
+
+    if(e.target === nav){
+        closeMenu();
+    }
+
+});
+
+
+/* =========================================================
+   REVEAL
+========================================================= */
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+        }
+
+    });
+
+},{
+    threshold:.12
+});
+
+revealElements.forEach(element => {
+    observer.observe(element);
+});
+
+
+/* =========================================================
+   ROK
+========================================================= */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+const heroVideo = document.querySelector(".hero-video");
+
+document.addEventListener("visibilitychange", () => {
+    if(document.hidden){
+        heroVideo.pause();
+    }else{
+        heroVideo.play().catch(() => {});
+    }
+});
+
+</script>
+
+</body>
+</html>
