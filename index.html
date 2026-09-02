@@ -515,15 +515,21 @@ nav a:hover::after{
 
 .gallery-grid{
     display:grid;
-    grid-template-columns:repeat(5,1fr);
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(2,260px);
     gap:12px;
 }
 
 .gallery-item{
     position:relative;
     width:100%;
-    aspect-ratio:4 / 5;
     overflow:hidden;
+}
+
+/* první fotka = velká vlevo */
+.gallery-item:first-child{
+    grid-column:span 2;
+    grid-row:span 2;
 }
 
 .gallery-item img{
