@@ -1110,11 +1110,6 @@ footer{
         min-height:600px;
     }
 
-    /*
-      Video je horizontální.
-      Cover na mobilu ořízne boky, ale zachová plnou hero plochu.
-      Pozici můžeme později upravit podle konkrétních záběrů.
-    */
     .hero-video{
         object-fit:cover;
         object-position:center center;
@@ -1233,9 +1228,11 @@ footer{
     }
 
     .gallery-grid .gallery-item:first-child{
-        grid-column:span 2 !important;
-        height:330px;
-    }
+    grid-column:span 2 !important;
+    height:auto;
+    min-height:330px;
+    grid-row:auto !important;
+}
 
     .gallery-item::after{
         display:none;
