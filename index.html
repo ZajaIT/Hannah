@@ -691,12 +691,6 @@ nav a:hover::after{
     align-items:start;
 }
 
-.price-column{
-    display:flex;
-    flex-direction:column;
-    gap:35px;
-}
-
 .price-box{
     border:1px solid var(--line);
     padding:50px;
@@ -746,25 +740,6 @@ nav a:hover::after{
     font-size:.83rem;
     text-transform:uppercase;
     letter-spacing:.1em;
-}
-
-   .price-subtitle{
-    margin-top:32px;
-    padding:10px 0 9px;
-    border-bottom:1px solid var(--gold);
-    color:var(--gold-light);
-    font-size:.72rem;
-    font-weight:500;
-    text-transform:uppercase;
-    letter-spacing:.18em;
-}
-
-.price-title + .price-subtitle{
-    margin-top:0;
-}
-
-.price-subtitle-large{
-    margin-top:42px;
 }
 
 /* =========================================================
@@ -1644,37 +1619,41 @@ footer{
     <div class="container">
 
         <div class="prices-head reveal">
+
+
             <div class="price-heading">
-                <h2 class="section-title">Ceník</h2>
-                <div class="gold-line"></div>
-            </div>
+    <h2 class="section-title">Ceník</h2>
+    <div class="gold-line"></div>
+</div>
+
         </div>
 
 
         <div class="price-columns">
-           <div class="price-column">
 
 
             <!-- TETOVÁNÍ -->
 
             <div class="price-box reveal">
 
-                <h3 class="price-title">Tetování</h3>
-
-                <div class="price-subtitle">Tetování a barvy</div>
+                <h3 class="price-title">
+                    Tetování
+                </h3>
 
                 <div class="price-row">
-                    <span>Černo-bílé tetování</span>
+                    <span>Konzultace</span>
+                    <strong>zdarma</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Vypracování návrhu bez tetování</span>
+                    <strong>1 000 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Tetování černo-bílé</span>
                     <strong>od 1 200 Kč</strong>
                 </div>
-
-                <div class="price-row">
-                    <span>Barevné tetování</span>
-                    <strong>od 1 700 Kč</strong>
-                </div>
-
-
-                <div class="price-subtitle">Úpravy tetování</div>
 
                 <div class="price-row">
                     <span>Refresh starého tetování</span>
@@ -1682,31 +1661,22 @@ footer{
                 </div>
 
                 <div class="price-row">
-                    <span>Cover UP (předělávka)</span>
+                    <span>Tetování barevné</span>
+                    <strong>od 1 700 Kč</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Cover up (předělávka)</span>
                     <strong>od 2 000 Kč</strong>
                 </div>
 
                 <div class="price-row">
                     <span>Korekce</span>
-                    <strong>zdarma / od 500 Kč</strong>
-                </div>
-
-
-                <div class="price-subtitle">Ostatní</div>
-
-                <div class="price-row">
-                    <span>Vypracování návrhu</span>
-                    <strong>od 1 000 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Konzultace</span>
-                    <strong>zdarma</strong>
+                    <strong>zdarma / min částka</strong>
                 </div>
 
                 <p class="price-note">
-                    Ceny jsou orientační. Konečná částka se odvíjí od velikosti,
-                    umístění a náročnosti motivu.
+                    Částka se odvíjí dle umístění, velikosti a náročnosti motivu.
                 </p>
 
             </div>
@@ -1716,88 +1686,9 @@ footer{
 
             <div class="price-box reveal">
 
-                <h3 class="price-title">Piercing</h3>
-
-                <div class="price-subtitle">Piercing</div>
-
-                <div class="price-row">
-                    <span>Jazyk</span>
-                    <strong>850 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Bradavky</span>
-                    <strong>1× 750 Kč / obě 1 300 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Pupík</span>
-                    <strong>800 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Ženské genitálie</span>
-                    <strong>1 000 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Obočí</span>
-                    <strong>800 Kč</strong>
-                </div>
-
-
-                <div class="price-subtitle">Nos</div>
-
-                <div class="price-row">
-                    <span>Pecka</span>
-                    <strong>750 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Kroužek</span>
-                    <strong>800 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Septum</span>
-                    <strong>850 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Bridge</span>
-                    <strong>850 Kč</strong>
-                </div>
-
-
-                <div class="price-subtitle">Rty</div>
-
-                <div class="price-row">
-                    <span>Madonna</span>
-                    <strong>800 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Medusa</span>
-                    <strong>800 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Monroe</span>
-                    <strong>800 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Labret</span>
-                    <strong>800 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Ostatní</span>
-                    <strong>800 Kč</strong>
-                </div>
-
-
-                <div class="price-subtitle">Uši</div>
+                <h3 class="price-title">
+                    Aplikace piercingu
+                </h3>
 
                 <div class="price-row">
                     <span>Lobe</span>
@@ -1806,37 +1697,32 @@ footer{
 
                 <div class="price-row">
                     <span>Helix</span>
-                    <strong>750 Kč</strong>
+                    <strong>700 Kč</strong>
                 </div>
 
                 <div class="price-row">
                     <span>Industrial</span>
-                    <strong>1 000 Kč</strong>
+                    <strong>900 Kč</strong>
                 </div>
 
                 <div class="price-row">
                     <span>Rook</span>
-                    <strong>800 Kč</strong>
+                    <strong>700 Kč</strong>
                 </div>
 
                 <div class="price-row">
-                    <span>Snug</span>
+                    <span>SNUG</span>
                     <strong>700 Kč</strong>
                 </div>
 
                 <div class="price-row">
                     <span>Conch</span>
-                    <strong>800 Kč</strong>
+                    <strong>700 Kč</strong>
                 </div>
 
                 <div class="price-row">
                     <span>Tragus</span>
-                    <strong>800 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Daith</span>
-                    <strong>800 Kč</strong>
+                    <strong>700 Kč</strong>
                 </div>
 
                 <div class="price-row">
@@ -1844,93 +1730,7 @@ footer{
                     <strong>800 Kč</strong>
                 </div>
 
-                <p class="price-note">
-                    V ceně jsou základní titanové šperky.
-                </p>
-
             </div>
-
-
-            <!-- NÁSTŘEL NÁUŠNIC -->
-
-            <div class="price-box reveal">
-
-                <h3 class="price-title">Nástřel náušnic</h3>
-
-                <div class="price-subtitle">Nástřelení náušnic – Lobe</div>
-
-                <div class="price-row">
-                    <span>Pár malé</span>
-                    <strong>500 Kč / 400 Kč/ks</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Pár velké</span>
-                    <strong>700 Kč / 450 Kč/ks</strong>
-                </div>
-
-
-                <div class="price-subtitle">Lobe 2., 3. náušnice</div>
-
-                <div class="price-row">
-                    <span>Malá</span>
-                    <strong>400 Kč/ks</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Velká</span>
-                    <strong>500 Kč/ks</strong>
-                </div>
-
-                <p class="price-note">
-                    V ceně jsou základní titanové šperky.
-                </p>
-
-            </div>
-
-
-            <!-- MICRODERMAL + DENTÁLNÍ ŠPERK -->
-
-            <div class="price-box reveal">
-
-                <h3 class="price-title">Microdermal</h3>
-
-                <div class="price-row">
-                    <span>Malý šperk</span>
-                    <strong>1 000 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Střední šperk</span>
-                    <strong>1 200 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Velký šperk</span>
-                    <strong>1 400 Kč</strong>
-                </div>
-
-                <div class="price-row">
-                    <span>Surface</span>
-                    <strong>1 000 Kč</strong>
-                </div>
-
-
-                <div class="price-subtitle price-subtitle-large">
-                    Dentální šperk
-                </div>
-
-                <div class="price-row">
-                    <span>Dentální šperk</span>
-                    <strong>300 Kč</strong>
-                </div>
-
-                <p class="price-note">
-                    V ceně jsou základní titanové šperky.
-                </p>
-
-            </div>
-
 
         </div>
 
